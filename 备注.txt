@@ -1,0 +1,5 @@
+1、获取Excel表格中的行数据和列数据，行号和列号都是从0开始的，而获取某个单元格数据行号和列号都是从1开始的
+2、写入Excel表格中的数据，行号和列号都是从1开始的
+3、模块：openpyxl,操作Excel文件，安装pip install openpyxl
+4、模块：ConfigParser, 操作配置文件，安装pip install ConfigParser
+5、模块：selenium, 安装：pip install selenium

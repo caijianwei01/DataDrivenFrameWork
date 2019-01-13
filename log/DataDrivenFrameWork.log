@@ -1,0 +1,281 @@
+
+
+2019-01-06 02:02:42 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:02:48 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:02:48 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:02:51 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 02:02:52 testmail163_addcontacts.py[line:133] INFO 数据驱动框架主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 99, in test_163_mail_add_contacts
+    contact_person_phone, contact_person_comment)
+  File "C:\Users\18367\PycharmProjects\DataDrivenFrameWork\appmodules\add_contact_person_action.py", line 41, in add
+    raise e
+  File "C:\Users\18367\PycharmProjects\DataDrivenFrameWork\appmodules\add_contact_person_action.py", line 24, in add
+    time.sleep(3)
+NameError: name 'time' is not defined
+
+2019-01-06 02:04:51 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:04:56 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:04:56 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:05:00 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 02:05:16 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 02:05:16 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 02:05:32 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 02:05:32 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 02:05:48 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 02:05:48 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 02:05:48 testmail163_addcontacts.py[line:119] INFO 联系人 None 被忽略执行
+2019-01-06 02:06:04 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 02:06:04 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 02:06:04 testmail163_addcontacts.py[line:127] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 02:09:09 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:09:14 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:09:14 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:09:18 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 02:09:19 testmail163_addcontacts.py[line:136] INFO 数据驱动框架主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 99, in test_163_mail_add_contacts
+    contact_person_phone, contact_person_comment)
+  File "C:\Users\18367\PycharmProjects\DataDrivenFrameWork\appmodules\add_contact_person_action.py", line 40, in add
+    raise e
+  File "C:\Users\18367\PycharmProjects\DataDrivenFrameWork\appmodules\add_contact_person_action.py", line 26, in add
+    apb.create_contact_per_btn().click()
+  File "C:\Users\18367\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\18367\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\18367\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\18367\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <span class="nui-btn-text">...</span> is not clickable at point (265, 110). Other element would receive the click: <div id="_mail_component_260_260" class="js-component-component nui-mask nui-msgbox-hiding"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)
+
+
+2019-01-06 02:10:19 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:10:26 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:10:26 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:10:29 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 02:10:42 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 02:10:42 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 02:10:55 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 02:10:55 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 02:11:08 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 02:11:08 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 02:11:08 testmail163_addcontacts.py[line:122] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 02:11:20 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 02:11:20 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 02:11:20 testmail163_addcontacts.py[line:130] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 02:12:07 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:12:13 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:12:13 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:12:16 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 02:12:22 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 02:12:22 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 02:12:35 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 02:12:35 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 02:12:48 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 02:12:48 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 02:12:48 testmail163_addcontacts.py[line:122] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 02:13:01 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 02:13:01 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 02:13:01 testmail163_addcontacts.py[line:130] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 02:13:38 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:13:44 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:13:44 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:13:47 testmail163_addcontacts.py[line:68] DEBUG 用户 18367157420 登录后，断言页面关键字"收 信"失败, 异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 64, in test_163_mail_add_contacts
+    assert '收 信' in driver.page_source
+AssertionError
+
+2019-01-06 02:13:57 testmail163_addcontacts.py[line:136] INFO 数据驱动框架主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 99, in test_163_mail_add_contacts
+    contact_person_phone, contact_person_comment)
+  File "C:\Users\18367\PycharmProjects\DataDrivenFrameWork\appmodules\add_contact_person_action.py", line 42, in add
+    raise e
+  File "C:\Users\18367\PycharmProjects\DataDrivenFrameWork\appmodules\add_contact_person_action.py", line 19, in add
+    hp.address_link().click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+2019-01-06 02:16:53 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:16:59 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:16:59 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:17:02 testmail163_addcontacts.py[line:68] DEBUG 用户 18367157420 登录后，断言页面关键字"收 信"失败, 异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 64, in test_163_mail_add_contacts
+    assert '收 信' in driver.page_source
+AssertionError
+
+2019-01-06 02:17:12 testmail163_addcontacts.py[line:136] INFO 数据驱动框架主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 99, in test_163_mail_add_contacts
+    contact_person_phone, contact_person_comment)
+  File "C:\Users\18367\PycharmProjects\DataDrivenFrameWork\appmodules\add_contact_person_action.py", line 42, in add
+    raise e
+  File "C:\Users\18367\PycharmProjects\DataDrivenFrameWork\appmodules\add_contact_person_action.py", line 19, in add
+    hp.address_link().click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+2019-01-06 02:17:53 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:17:59 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:17:59 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:18:02 testmail163_addcontacts.py[line:68] DEBUG 用户 18367157420 登录后，断言页面关键字"收 信"失败, 异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 64, in test_163_mail_add_contacts
+    assert '收 信' in driver.page_source
+AssertionError
+
+2019-01-06 02:18:16 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 02:18:17 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 02:18:50 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 02:18:50 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 02:19:23 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 02:19:23 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 02:19:23 testmail163_addcontacts.py[line:122] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 02:19:55 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 02:19:55 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 02:19:55 testmail163_addcontacts.py[line:130] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 02:20:36 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:20:41 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:20:41 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:20:45 testmail163_addcontacts.py[line:68] DEBUG 用户 18367157420 登录后，断言页面关键字"收 信"失败, 异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 64, in test_163_mail_add_contacts
+    assert '收 信' in driver.page_source
+AssertionError
+
+2019-01-06 02:20:57 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 02:20:58 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 02:21:21 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 02:21:21 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 02:21:44 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 02:21:44 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 02:21:44 testmail163_addcontacts.py[line:122] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 02:22:07 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 02:22:07 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 02:22:07 testmail163_addcontacts.py[line:130] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 02:22:20 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:22:26 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:22:26 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:22:29 testmail163_addcontacts.py[line:68] DEBUG 用户 18367157420 登录后，断言页面关键字"收 信"失败, 异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 64, in test_163_mail_add_contacts
+    assert '收 信' in driver.page_source
+AssertionError
+
+2019-01-06 02:22:42 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 02:22:42 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 02:22:55 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 02:22:55 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 02:23:08 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 02:23:08 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 02:23:08 testmail163_addcontacts.py[line:122] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 02:23:21 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 02:23:21 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 02:23:21 testmail163_addcontacts.py[line:130] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 02:26:30 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:26:36 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:26:36 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:26:39 testmail163_addcontacts.py[line:68] DEBUG 用户 18367157420 登录后，断言页面关键字"收 信"失败, 异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 64, in test_163_mail_add_contacts
+    assert '收 信' in driver.page_source
+AssertionError
+
+2019-01-06 02:26:51 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:26:57 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:26:57 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:28:02 testmail163_addcontacts.py[line:136] INFO 数据驱动框架主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "C:/Users/18367/PycharmProjects/DataDrivenFrameWork/testscripts/testmail163_addcontacts.py", line 64, in test_163_mail_add_contacts
+    assert '收 信' in driver.page_source
+TypeError: argument of type 'NoneType' is not iterable
+
+2019-01-06 02:28:14 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 02:28:19 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 02:28:19 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 02:29:26 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 02:29:32 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 02:29:32 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 02:29:45 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 02:29:45 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 02:29:58 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 02:29:58 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 02:29:58 testmail163_addcontacts.py[line:122] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 02:30:11 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 02:30:11 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 02:30:11 testmail163_addcontacts.py[line:130] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 14:47:19 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 14:47:25 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 14:47:25 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 14:47:29 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 14:47:35 testmail163_addcontacts.py[line:100] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 14:47:35 testmail163_addcontacts.py[line:115] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 14:47:48 testmail163_addcontacts.py[line:100] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 14:47:48 testmail163_addcontacts.py[line:115] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 14:48:02 testmail163_addcontacts.py[line:100] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 14:48:02 testmail163_addcontacts.py[line:115] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 14:48:02 testmail163_addcontacts.py[line:121] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 14:48:14 testmail163_addcontacts.py[line:100] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 14:48:15 testmail163_addcontacts.py[line:115] INFO 断言关键字 "李四" 成功
+2019-01-06 14:48:15 testmail163_addcontacts.py[line:129] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 14:52:37 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 14:52:43 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 14:52:43 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 14:52:47 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 14:52:53 testmail163_addcontacts.py[line:104] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 14:52:53 testmail163_addcontacts.py[line:119] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 14:53:05 testmail163_addcontacts.py[line:104] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 14:53:06 testmail163_addcontacts.py[line:119] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 14:53:18 testmail163_addcontacts.py[line:104] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 14:53:19 testmail163_addcontacts.py[line:119] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 14:53:19 testmail163_addcontacts.py[line:125] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 14:53:31 testmail163_addcontacts.py[line:104] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 14:53:32 testmail163_addcontacts.py[line:119] INFO 断言关键字 "李四" 成功
+2019-01-06 14:53:32 testmail163_addcontacts.py[line:133] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 14:55:09 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 14:55:15 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 14:55:15 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 14:55:19 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 14:55:24 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 14:55:24 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 14:55:38 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 14:55:38 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 14:55:51 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 14:55:51 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 14:55:51 testmail163_addcontacts.py[line:122] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 14:56:04 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 14:56:04 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 14:56:04 testmail163_addcontacts.py[line:130] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 14:57:15 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 14:57:20 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 14:57:20 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 14:57:24 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 14:57:30 testmail163_addcontacts.py[line:101] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 14:57:30 testmail163_addcontacts.py[line:116] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 14:57:43 testmail163_addcontacts.py[line:101] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 14:57:43 testmail163_addcontacts.py[line:116] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 14:57:56 testmail163_addcontacts.py[line:101] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 14:57:56 testmail163_addcontacts.py[line:116] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 14:57:56 testmail163_addcontacts.py[line:122] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 14:58:09 testmail163_addcontacts.py[line:101] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 14:58:09 testmail163_addcontacts.py[line:116] INFO 断言关键字 "李四" 成功
+2019-01-06 14:58:09 testmail163_addcontacts.py[line:130] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
+2019-01-06 15:05:19 testmail163_addcontacts.py[line:37] INFO 163邮箱添加联系人数据驱动测试开始...
+2019-01-06 15:05:25 testmail163_addcontacts.py[line:47] INFO 启动浏览器，访问163邮箱主页
+2019-01-06 15:05:25 testmail163_addcontacts.py[line:56] INFO 测试用户名：18367157420, 测试用户密码：qwer128201209q@
+2019-01-06 15:05:29 testmail163_addcontacts.py[line:65] INFO 用户 18367157420 登录后，断言页面关键字"收 信"成功
+2019-01-06 15:05:35 testmail163_addcontacts.py[line:102] INFO 添加联系人 lily@qq.com 成功
+2019-01-06 15:05:35 testmail163_addcontacts.py[line:117] INFO 断言关键字 "lily@qq.com" 成功
+2019-01-06 15:05:48 testmail163_addcontacts.py[line:102] INFO 添加联系人 zhangsan@qq.com 成功
+2019-01-06 15:05:48 testmail163_addcontacts.py[line:117] INFO 断言关键字 "zhangsan@qq.com" 成功
+2019-01-06 15:06:01 testmail163_addcontacts.py[line:102] INFO 添加联系人 1031901787@qq.com 成功
+2019-01-06 15:06:01 testmail163_addcontacts.py[line:117] INFO 断言关键字 "蔡剑伟" 成功
+2019-01-06 15:06:01 testmail163_addcontacts.py[line:123] INFO 联系人 amy@qq.com 被忽略执行
+2019-01-06 15:06:14 testmail163_addcontacts.py[line:102] INFO 添加联系人 lisi@qq.com 成功
+2019-01-06 15:06:14 testmail163_addcontacts.py[line:117] INFO 断言关键字 "李四" 成功
+2019-01-06 15:06:14 testmail163_addcontacts.py[line:131] INFO 为用户 18367157420 添加4个联系人, 4个成功
+
